@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --green-primary: #1e6b27;
+  --green-secondary: #2a8038;
+  --green-deep: #10491a;
+  --green-muted: #7fbf6a;
+  --orange-cta: #ff8000;
+  --orange-hover: #e67300;
+  --red-alert: #d9383a;
+  --slate: #2f4b63;
+  --slate-soft: #4a6b85;
+
+  --dark-text: #1f1f1f;
+  --gray-text: #4a4a4a;
+  --gray-medium: #6b6b6b;
+  --gray-light: #9a9a94;
+  --gray-border: #e0e0d8;
+
+  --bg-cream: #f7f7f2;
+  --bg-white: #ffffff;
+  --bg-sunken: #eeeee6;
+
+  --shadow-sm: 0 1px 3px rgba(31, 31, 31, 0.06);
+  --shadow-md: 0 4px 14px rgba(31, 31, 31, 0.08);
+  --shadow-lg: 0 10px 34px rgba(31, 31, 31, 0.1);
+  --shadow-xl: 0 24px 64px rgba(31, 31, 31, 0.14);
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+
+  --font-display: 'Outfit', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+
+  --section-pad: clamp(72px, 9vw, 132px);
+  --container: 1200px;
+
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 480ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 92px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--gray-text);
+  background: var(--bg-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  color: var(--dark-text);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+::selection {
+  background: var(--orange-cta);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--orange-cta);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
