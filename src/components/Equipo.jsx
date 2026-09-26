@@ -21,17 +21,31 @@ export default function Equipo() {
           <p className="section__lead">{team.lead}</p>
         </Reveal>
 
-        <ul className="team">
+        {/* Contenedor con estilos en línea para alinear y repartir las tarjetas */}
+        <ul 
+          className="team" 
+          style={{ 
+            display: 'flex', 
+            flexWrap: 'wrap', 
+            justifyContent: 'center', 
+            gap: '20px',
+            maxWidth: '1000px',
+            margin: '0 auto'
+          }}
+        >
           {team.members.map((member, i) => (
-            <Reveal as="li" className="team__card" key={member.id} delay={i * 80}>
+            <Reveal 
+              as="li" 
+              className="team__card" 
+              key={member.name} 
+              delay={i * 80}
+              // Ancho controlado para que entren 3 en la primera fila y bajen 2 abajo
+              style={{ flex: '1 1 280px', maxWidth: '300px' }}
+            >
               <span className="team__avatar" aria-hidden="true">
                 {initialsOf(member.name)}
               </span>
               <h3 className="team__name">{member.name}</h3>
-              <p className="team__id">
-                <span className="team__id-label">Legajo</span>
-                {member.id}
-              </p>
             </Reveal>
           ))}
         </ul>

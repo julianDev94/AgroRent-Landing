@@ -1,7 +1,7 @@
 export const nav = [
-  { id: 'solucion', label: 'La plataforma' },
+  { id: 'solucion', label: 'Plataforma' },
   { id: 'identidad', label: 'Identidad' },
-  { id: 'foda', label: 'Análisis FODA' },
+  { id: 'foda', label: '¿Por qué AgroRent?' },
   { id: 'equipo', label: 'Equipo' },
 ]
 
@@ -22,7 +22,7 @@ export const hero = {
 }
 
 export const solution = {
-  eyebrow: 'La plataforma',
+  eyebrow: 'Plataforma',
   title: 'Todo el ciclo del alquiler, en un solo lugar',
   lead:
     'Reúnimos en un mismo mercado la oferta dispersa de contratistas y dueños de maquinaria, y sumamos las capas que el acuerdo informal no resuelve: certificación, contrato legal y pago.',
@@ -92,92 +92,48 @@ export const identity = {
 }
 
 export const foda = {
-  eyebrow: 'Análisis de mercado',
-  title: 'Contexto competitivo: análisis FODA',
+  eyebrow: '¿Por qué AgroRent?',
+  title: 'La evolución del alquiler agrícola',
   lead:
-    'Definimos el tipo de desarrollo elegido y analizamos la competencia actual y potencial del servicio de alquiler de maquinaria agrícola en la región del NOA.',
+    'Conectamos el campo con tecnología, transparencia y máxima rentabilidad en toda la región del NOA.',
   quadrants: [
     {
       key: 'fortalezas',
       tone: 'green',
-      label: 'Fortalezas',
-      caption: 'Interno · positivo',
+      label: 'Ventajas Clave',
+      caption: 'Tecnología y confianza',
       items: [
         {
-          title: 'Eficiencia de costos',
-          body: 'Permite a pequeños y medianos productores acceder a tecnología avanzada sin grandes inversiones de capital.',
+          title: 'Cero inversión inicial',
+          body: 'Accedé a maquinaria de última generación sin comprometer el capital de tu campo.',
         },
         {
-          title: 'Centralización de la oferta',
-          body: 'Reúne en un solo lugar a contratistas y dueños de maquinaria con equipos ociosos, aumentando la transparencia de precios.',
+          title: 'Precios transparentes',
+          body: 'Unificamos la oferta de la región en un solo lugar.',
         },
         {
-          title: 'Escalabilidad',
-          body: 'Al ser una plataforma digital, el modelo puede expandirse rápidamente a otras provincias del NOA.',
-        },
-        {
-          title: 'Datos de valor',
-          body: 'Capacidad de recolectar datos sobre demanda, precios promedio y zonas de mayor actividad, lo cual es monetizable.',
-        },
-      ],
-    },
-    {
-      key: 'debilidades',
-      tone: 'red',
-      label: 'Debilidades',
-      caption: 'Interno · negativo',
-      items: [
-        {
-          title: 'Complejidad logística',
-          body: 'El alquiler de maquinaria pesada implica transporte, seguros específicos y mantenimiento que la plataforma debe coordinar o supervisar.',
-        },
-        {
-          title: 'Brecha de confianza',
-          body: 'Resistencia inicial de los dueños de equipos a prestar maquinaria costosa a terceros a través de una aplicación.',
-        },
-        {
-          title: 'Dependencia de la conectividad',
-          body: 'Muchas zonas rurales de Tucumán tienen baja señal, lo que obliga a que la plataforma tenga funcionalidades offline potentes.',
+          title: 'Expansión ágil',
+          body: 'Una plataforma digital diseñada para crecer rápido y operar sin fricciones en todo el NOA.',
         },
       ],
     },
     {
       key: 'oportunidades',
       tone: 'orange',
-      label: 'Oportunidades',
-      caption: 'Externo · positivo',
+      label: 'Oportunidad de Negocio',
+      caption: 'Crecimiento y respaldo',
       items: [
         {
-          title: 'Diversidad de cultivos en Tucumán',
-          body: 'La provincia tiene ventanas de cosecha escalonadas, lo que permite una demanda de maquinaria durante casi todo el año.',
+          title: 'Demanda todo el año',
+          body: 'Aprovechamos las cosechas escalonadas de Tucumán para mantener tus equipos trabajando.',
         },
         {
-          title: 'Optimización de capacidad instalada',
-          body: 'Muchos dueños tienen equipos parados entre campañas; la plataforma les ofrece una fuente de ingresos extra.',
+          title: 'Monetizá tus equipos ociosos',
+          body: 'Transformá la maquinaria parada entre campañas en una fuente de ingresos extra y segura.',
         },
         {
-          title: 'Alianzas estratégicas',
-          body: 'Posibilidad de aliarse con concesionarias locales para certificar el estado de las máquinas publicadas.',
-        },
-      ],
-    },
-    {
-      key: 'amenazas',
-      tone: 'slate',
-      label: 'Amenazas',
-      caption: 'Externo · negativo',
-      items: [
-        {
-          title: 'Inestabilidad macroeconómica',
-          body: 'La volatilidad del peso dificulta la fijación de precios a mediano plazo y afecta el costo de los repuestos importados.',
-        },
-        {
-          title: 'Relaciones tradicionales',
-          body: 'En Tucumán el sector agropecuario se basa mucho en el “boca en boca” y en relaciones personales de años.',
-        },
-        {
-          title: 'Clima',
-          body: 'Eventos extremos como sequías o inundaciones pueden paralizar la demanda de alquileres de forma repentina en toda la región.',
+          title: 'Certificación oficial',
+          body: 'Alianzas con concesionarias líderes para garantizar el estado técnico de cada máquina.',
         },
       ],
     },
@@ -185,23 +141,16 @@ export const foda = {
 }
 
 export const team = {
-  eyebrow: 'Equipo de trabajo',
-  title: 'Estudiantes de Administración de Sistemas de Información',
+  eyebrow: 'Nuestro Equipo',
+  title: 'Detrás de la innovación en el agro',
   lead:
-    'AgroRent es un proyecto desarrollado por cuatro estudiantes de la carrera, en el marco del Trabajo Práctico N.º 1 sobre estructura organizacional y descripción de puestos.',
+    'Un equipo multidisciplinario de profesionales apasionados por la tecnología, el desarrollo de software y la transformación digital de la cadena agroindustrial.',
   members: [
-    { name: 'Aballay, Cristian Julián', id: '48143' },
-    { name: 'Ale, Nicolás Salomón', id: '43586' },
-    { name: 'Bulacio, Fernanda Agustina', id: '40885' },
-    { name: 'Mercado, Agostina', id: '57481' },
+    { name: 'Aballay, Cristian Julián' },
+    { name: 'Ale, Nicolás Salomón' },
+    { name: 'Bulacio, Fernanda Agustina' },
+    { name: 'Mercado, Agostina' },
+    { name: 'Villarreal, Gaston Marcos' },
   ],
 }
 
-export const institution = {
-  university: 'Universidad Tecnológica Nacional',
-  faculty: 'Facultad Regional Tucumán',
-  department: 'Departamento de Sistemas',
-  course: 'Administración de Sistemas de Información — 4K3',
-  assignment: 'Trabajo Práctico N.º 1 · Estructura Organizacional y Descripción de Puestos',
-  teachers: ['Ing. Lucas Elio Cordero', 'Ing. Fernando Ugarte', 'Ing. Quiroga Hamoud'],
-}
