@@ -21,7 +21,6 @@ export default function Equipo() {
           <p className="section__lead">{team.lead}</p>
         </Reveal>
 
-        {/* Contenedor con estilos en línea para alinear y repartir las tarjetas */}
         <ul 
           className="team" 
           style={{ 
@@ -39,13 +38,29 @@ export default function Equipo() {
               className="team__card" 
               key={member.name} 
               delay={i * 80}
-              // Ancho controlado para que entren 3 en la primera fila y bajen 2 abajo
-              style={{ flex: '1 1 280px', maxWidth: '300px' }}
+              style={{ flex: '1 1 280px', maxWidth: '300px', textAlign: 'center' }}
             >
-              <span className="team__avatar" aria-hidden="true">
-                {initialsOf(member.name)}
-              </span>
-              <h3 className="team__name">{member.name}</h3>
+              <div 
+                className="team__avatar" 
+                aria-hidden="true" 
+                style={{ 
+                  overflow: 'hidden', 
+                  display: 'flex', 
+                  justifyContent: 'center', 
+                  alignItems: 'center' 
+                }}
+              >
+                {member.image ? (
+                  <img 
+                    src={member.image} 
+                    alt={member.name} 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                  />
+                ) : (
+                  initialsOf(member.name)
+                )}
+              </div>
+              <h3 className="team__name" style={{ marginTop: '12px' }}>{member.name}</h3>
             </Reveal>
           ))}
         </ul>

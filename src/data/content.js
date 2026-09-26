@@ -148,8 +148,8 @@ export const team = {
   members: [
     { name: 'Aballay, Cristian Julián' },
     { name: 'Ale, Nicolás Salomón' },
-    { name: 'Bulacio, Fernanda Agustina' },
-    { name: 'Mercado, Agostina' },
+    { name: 'Bulacio, Fernanda Agustina', image: '/src/assets/agus.jpeg' },
+    { name: 'Mercado, Agostina', image: '/src/assets/agos.jpeg' },
     { name: 'Villarreal, Gaston Marcos' },
   ],
 }
