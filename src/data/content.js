@@ -146,11 +146,12 @@ export const team = {
   lead:
     'Un equipo multidisciplinario de profesionales apasionados por la tecnología, el desarrollo de software y la transformación digital de la cadena agroindustrial.',
   members: [
-    { name: 'Aballay, Cristian Julián' },
-    { name: 'Ale, Nicolás Salomón' },
+    { name: 'Aballay, Cristian Julián', image: '/src/assets/Julian.jpeg' },
+    { name: 'Ale, Nicolás Salomón', image: '/src/assets/Nicolas.jpeg' },
     { name: 'Bulacio, Fernanda Agustina', image: '/src/assets/agus.jpeg' },
     { name: 'Mercado, Agostina', image: '/src/assets/agos.jpeg' },
-    { name: 'Villarreal, Gaston Marcos' },
+    { name: 'Villarreal, Gaston Marcos', image: '/src/assets/gaston.jpeg' },
   ],
 }
+
 
