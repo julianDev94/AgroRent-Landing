@@ -145,13 +145,13 @@ export const team = {
   title: 'Detrás de la innovación en el agro',
   lead:
     'Un equipo multidisciplinario de profesionales apasionados por la tecnología, el desarrollo de software y la transformación digital de la cadena agroindustrial.',
-  members: [
-    { name: 'Aballay, Cristian Julián', image: '/public/assets/Julian.jpeg' },
-    { name: 'Ale, Nicolás Salomón', image: '/public/assets/Nicolas.jpeg' },
-    { name: 'Bulacio, Fernanda Agustina', image: '/public/assets/agus.jpeg' },
-    { name: 'Mercado, Agostina', image: '/public/assets/agos.jpeg' },
-    { name: 'Villarreal, Gaston Marcos', image: '/public/assets/gaston.jpeg' },
-  ],
+members: [
+    { name: 'Aballay, Cristian Julián', image: '/assets/Julian.jpeg' },
+    { name: 'Ale, Nicolás Salomón', image: '/assets/Nicolas.jpeg' },
+    { name: 'Bulacio, Fernanda Agustina', image: '/assets/agus.jpeg' },
+    { name: 'Mercado, Agostina', image: '/assets/agos.jpeg' },
+    { name: 'Villarreal, Gaston Marcos', image: '/assets/Gaston.jpeg' },
+],
 }
 
 
