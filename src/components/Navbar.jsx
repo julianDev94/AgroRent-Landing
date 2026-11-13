@@ -61,7 +61,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <a className="navbar__cta" href="#solucion">
+        <a className="navbar__cta" href="https://agrorent-sistema.netlify.app/">
           Ver la plataforma
           <Icon name="arrow" size={17} className="navbar__cta-icon" />
         </a>
