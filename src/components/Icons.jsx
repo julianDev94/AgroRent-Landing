@@ -34,6 +34,19 @@ const paths = {
   ),
   wrench: <path d="M14.7 6.3a4 4 0 0 0 5.3 5.3l-7.5 7.5a2.5 2.5 0 0 1-3.5-3.5l7.5-7.5Z" />,
   arrow: <path d="M5 12h14m-6-6 6 6-6 6" />,
+  menu: (
+    <>
+      <path d="M4 7h16" />
+      <path d="M4 12h16" />
+      <path d="M4 17h16" />
+    </>
+  ),
+  close: (
+    <>
+      <path d="M6 6l12 12" />
+      <path d="M18 6 6 18" />
+    </>
+  ),
 }
 
 export default function Icon({ name, size = 24, className = '' }) {
