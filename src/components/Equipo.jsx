@@ -21,17 +21,46 @@ export default function Equipo() {
           <p className="section__lead">{team.lead}</p>
         </Reveal>
 
-        <ul className="team">
+        <ul 
+          className="team" 
+          style={{ 
+            display: 'flex', 
+            flexWrap: 'wrap', 
+            justifyContent: 'center', 
+            gap: '20px',
+            maxWidth: '1000px',
+            margin: '0 auto'
+          }}
+        >
           {team.members.map((member, i) => (
-            <Reveal as="li" className="team__card" key={member.id} delay={i * 80}>
-              <span className="team__avatar" aria-hidden="true">
-                {initialsOf(member.name)}
-              </span>
-              <h3 className="team__name">{member.name}</h3>
-              <p className="team__id">
-                <span className="team__id-label">Legajo</span>
-                {member.id}
-              </p>
+            <Reveal 
+              as="li" 
+              className="team__card" 
+              key={member.name} 
+              delay={i * 80}
+              style={{ flex: '1 1 280px', maxWidth: '300px', textAlign: 'center' }}
+            >
+              <div 
+                className="team__avatar" 
+                aria-hidden="true" 
+                style={{ 
+                  overflow: 'hidden', 
+                  display: 'flex', 
+                  justifyContent: 'center', 
+                  alignItems: 'center' 
+                }}
+              >
+                {member.image ? (
+                  <img 
+                    src={member.image} 
+                    alt={member.name} 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                  />
+                ) : (
+                  initialsOf(member.name)
+                )}
+              </div>
+              <h3 className="team__name" style={{ marginTop: '12px' }}>{member.name}</h3>
             </Reveal>
           ))}
         </ul>

@@ -44,7 +44,8 @@ export default function Navbar() {
               <rect x="11" y="25" width="10" height="2.2" rx="1.1" fill="#F7F7F2" />
             </svg>
           </span>
-          <span className="navbar__wordmark">
+          {/* Si no está scrolleado es blanco (#ffffff), si scroleas usa el color por defecto */}
+          <span className="navbar__wordmark" style={{ color: scrolled ? undefined : '#ffffff' }}>
             Agro<span>Rent</span>
           </span>
         </a>
@@ -55,6 +56,7 @@ export default function Navbar() {
               key={item.id}
               className={`navbar__link ${active === item.id ? 'navbar__link--active' : ''}`}
               href={`#${item.id}`}
+              style={{ color: scrolled ? undefined : '#ffffff' }}
             >
               {item.label}
             </a>
